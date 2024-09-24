@@ -1,9 +1,13 @@
-from flask import Flask, render_template, request, redirect,  url_for
+from flask import Flask, render_template, request, redirect,  url_for, send_from_directory
 
-app = Flask('__name__')
+app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/images/<path:filename>')
+def server_image(filename):
+    return send_from_directory('./images', filename)
 
 if  __name__ == '__main__':
     #app.run(host="0.0.0.0", port=8000, debug=True)
