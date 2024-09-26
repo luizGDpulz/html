@@ -159,10 +159,10 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
-            <div class="imagem"><img src="../images/beefwellington.jpg" style="width: 100%;"></div>
+        <section class="carousel">
+            <!-- <div class="imagem"><img src="../images/beefwellington.jpg" style="width: 100%;"></div>
             <div class="imagem"><img src="../images/burger-with-melted-cheese.jpg" style="width: 100%;"></div>
-            <div class="imagem"><img src="../images/cuscuz-paulista.webp" style="width: 100%;"></div>
+            <div class="imagem"><img src="../images/cuscuz-paulista.webp" style="width: 100%;"></div> -->
         </section>
         <section class="section">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=y5cEi7h1SB6YL7gE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -175,3 +175,73 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+<section class="carousel" aria-label="Gallery">
+
+  <ol class="carousel__viewport">
+
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2" GITclass="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+    </li>
+
+    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+
+  </ol>
+
+
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
